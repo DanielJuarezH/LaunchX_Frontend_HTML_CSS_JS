@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock - The Cake Whisperer</title>
+    <link rel="stylesheet" href="./Style_Stock.css">
+    <style>
+        *{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {background-color: rgba(255, 250, 107, 0.2);
+            opacity: 0.95;
+        }
+        .name{
+            display: inline;
+            margin-left: 20px;
+        }
+
+        .form{
+        max-width: 90%;
+        background-color: lightgray;
+        margin: auto;
+        }
+        th {
+            text-align: center;
+            color: #FFFA6B;
+            background-color: #3B2500;
+        }
+        table, th, td {
+        border: 1px solid;
+        border-color: black;
+        border-collapse: collapse;
+        padding: 2px;
+        }
+        .ingredientsBox, .flavorBox, .toppingsBox {
+            align-items: center;
+            justify-content: center;
+            float:left;
+            width: 33%;
+            padding: 10px;
+        }
+        .boxinbox{
+            align-items: center;
+            justify-content: center;
+            float:left;
+            width: 50%;
+            padding: 5px;
+        }
+        input[type=checkbox]{
+            transform: scale(1.2);
+            margin-bottom: 6px;
+        }
+        input[type=number]{
+            width: 40px;
+        }
+        input[type=button], input[type=submit], input[type=reset] {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: bold;
+            font-size: 1.1em;
+            background-color: #04AA6D;
+            color: white;
+            border: none;
+            margin-top: 10px;
+            padding: 1% 1% 1% 1%;
+            cursor: pointer;
+            width: 100%;
+            border-style: none;
+            border-radius: 8px;
+        }
+            footer {
+            margin-top: 5px;
+            padding: 2px;
+            background-color: #3B2500;
+            color: #FFFA6B;
+            display: flex;
+            width: 100%;
+        }
+        .link{
+            color: #FFFA6B;
+        }
+        .ft1{
+            text-align: center;
+            display:inline-block;
+            position: relative;
+            left: 250px;
+        }
+        .ft2{
+            text-align: center;
+            display: inline-block;
+            padding-left: 20px;
+            position: absolute;
+            right: 250px;
+        }
+    </style>
+</head>
+<body>
+    <a class="logo" href="./Code_TheCakeWhispererMenu.html" target="./Code_TheCakeWhispererMenu.html"><img src="https://cdn-thumbs.imagevenue.com/ab/ed/cd/ME14JPH0_t.jpg" alt="The Cake Whisperer logo" width="150px"/></a> 
+    <h1 class="name">The Cake Whisperer</h1>
+    <h2>Available Stock</h2>
+    <p>All numbers are expressed in portions, i.e 1 Flour means there is enough flour to make 1 cake.</p>
+    <div class="container"></div>
+        <div class="ingredientsBox">
+            <h2>Basic Cake Ingredients</h2>
+            <table>
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Stock</th>
+                </tr>
+                <tr>
+                    <td>Flour</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Milk</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Egg</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Fat (Butter)</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Sugar</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Salt</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Baking Soda</td>
+                    <td>5</td>
+                </tr>
+            </table>
+        </div>
+        <div class="flavorBox">
+            <h2>Flavor Ingredients</h2>
+            <table>
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Stock</th>
+                </tr>
+                <tr>
+                    <td>Lemon</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Strawberry</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Banana</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Black Forrest</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Cheese</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Coffee</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Dark Chocolate</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Triple Chocolate</td>
+                    <td>5</td>
+                </tr>
+            </table>
+        </div>
+        <div class="toppingsBox">
+            <h2>Toppings</h2>
+            <table>
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Stock</th>
+                </tr>
+                <tr>
+                    <td>Chocolate Chips</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Colourful Sprinklers</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Wheat Cream</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Fruit Jam</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Peanut Butter</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Fresh Strawberries</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Fresh Cherries</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Fresh Blueberries</td>
+                    <td>5</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <h2>Restock</h2>
+    <p>To order ingredients, please fill out the form below.</p>
+    <form action="">
+        <fieldset class="form">
+            <legend>Order Ingredients</legend>
+                <label for="orderPriority">Select Priority:</label>
+                <select name="orderPriority" id="orderPriority" required>
+                    <option value="normalPriority">Normal</option>
+                    <option value="expeditePriority">Expedite</option>
+                    <option value="overnightPriority">Overnight</option>
+                </select>
+                <p>Normal delivery takes 7-10 business days, Expedited delivery 3-5 business days, Overnight delivery will be delivered within 24 hours.</p>
+            <fieldset class="ingredientsBox">
+                <Legend>Basic Cake Ingredients</Legend>
+                <div class="boxinbox">
+                    <input type="checkbox" name="flour" id="flour">
+                    <label for="flour">Flour</label><br>
+                    <input type="checkbox" name="egg" id="egg">
+                    <label for="egg">Egg</label><br>
+                    <input type="checkbox" name="fat" id="fat">
+                    <label for="fat">Fat</label><br>
+                    <input type="checkbox" name="sugar" id="sugar">
+                    <label for="sugar">Sugar</label><br>
+                    <input type="checkbox" name="salt" id="salt">
+                    <label for="salt">Salt</label><br>
+                    <input type="checkbox" name="milk" id="milk">
+                    <label for="milk">Milk</label><br>
+                    <input type="checkbox" name="bakingSoda" id="bakingSoda">
+                    <label for="bakingSoda">Baking Soda</label><br>
+                    <input type="checkbox" name="water" id="water">
+                    <label for="water">Water</label><br>
+                </div>
+                <div class="boxinbox">
+                    <label for="flourAmount">Amount:</label>
+                    <input type="number" name="flourAmount" id="flourAmount" min="10" max="90" required><br>
+                    <label for="eggAmount">Amount:</label>
+                    <input type="number" name="eggAmount" id="eggAmount" min="10" max="90" required><br>
+                    <label for="fatAmount">Amount:</label>
+                    <input type="number" name="fatAmount" id="fatAmount" min="10" max="90" required><br>
+                    <label for="sugarAmount">Amount:</label>
+                    <input type="number" name="sugarAmount" id="sugarAmount" min="10" max="90" required><br>
+                    <label for="saltAmount">Amount:</label>
+                    <input type="number" name="saltAmount" id="saltAmount" min="10" max="90" required><br>
+                    <label for="milkAmount">Amount:</label>
+                    <input type="number" name="milkAmount" id="milkAmount" min="10" max="90" required><br>
+                    <label for="bakingSodaAmount">Amount:</label>
+                    <input type="number" name="bakingSodaAmount" id="bakingSodaAmount" min="10" max="90" required><br>
+                    <label for="waterAmount">Amount:</label>
+                    <input type="number" name="waterAmount" id="waterAmount" min="10" max="90" required><br>
+                </div>
+            </fieldset>
+            <fieldset class="flavorBox">
+                <Legend>Flavor Ingredients</Legend>
+                <div class="boxinbox">
+                    <input type="checkbox" name="lemon" id="lemon">
+                    <label for="lemon">Lemon</label><br>
+                    <input type="checkbox" name="strawberry" id="strawberry">
+                    <label for="strawberry">Strawberry</label><br>
+                    <input type="checkbox" name="banana" id="banana">
+                    <label for="banana">Banana</label><br>
+                    <input type="checkbox" name="blackForrest" id="blackForrest">
+                    <label for="blackForrest">Black Forrest</label><br>
+                    <input type="checkbox" name="cheese" id="cheese">
+                    <label for="cheese">Cheesecake</label><br>
+                    <input type="checkbox" name="coffee" id="coffee">
+                    <label for="coffee">Coffee</label><br>
+                    <input type="checkbox" name="darkChocolate" id="darkChocolate">
+                    <label for="darkChocolate">Dark Chocolate</label><br>
+                    <input type="checkbox" name="tripleChocolate" id="tripleChocolate">
+                    <label for="tripleChocolate">Triple Chocolate</label><br>
+                </div>
+                <div class="boxinbox">
+                    <label for="lemonAmount">Amount:</label>
+                    <input type="number" name="lemonAmount" id="lemonAmount" min="10" max="90" required><br>
+                    <label for="strawberryAmount">Amount:</label>
+                    <input type="number" name="strawberryAmount" id="strawberryAmount" min="10" max="90" required><br>
+                    <label for="bananaAmount">Amount:</label>
+                    <input type="number" name="bananaAmount" id="bananaAmount" min="10" max="90" required><br>
+                    <label for="blackForrestAmount">Amount:</label>
+                    <input type="number" name="blackforrestAmount" id="blackforrestAmount" min="10" max="90" required><br>
+                    <label for="cheeseAmount">Amount:</label>
+                    <input type="number" name="cheeseAmount" id="cheeseAmount" min="10" max="90" required><br>
+                    <label for="coffeeAmount">Amount:</label>
+                    <input type="number" name="coffeeAmount" id="coffeeAmount" min="10" max="90" required><br>
+                    <label for="darkChocolateAmount">Amount:</label>
+                    <input type="number" name="darkChocolateAmount" id="darkChocolateAmount" min="10" max="90" required><br>
+                    <label for="tripleChocolateAmount">Amount:</label>
+                    <input type="number" name="tripleChocolateAmount" id="tripleChocolateAmount" min="10" max="90" required><br>
+                </div>
+            </fieldset>
+            <fieldset class="toppingsBox">
+                <Legend>Toppings</Legend>
+                <div class="boxinbox">
+                    <input type="checkbox" name="chocolateChips" id="chocolateChips">
+                    <label for="chocolateChips">Chocolate Chips</label><br>
+                    <input type="checkbox" name="colourfulSprinklers" id="colourfulSprinklers">
+                    <label for="colourfulSprinklers">Colourful Sprinklers</label><br>
+                    <input type="checkbox" name="wheatCream" id="wheatCream">
+                    <label for="wheatCream">wheatCream</label><br>
+                    <input type="checkbox" name="fruitJam" id="fruitJam">
+                    <label for="fruitJam">Fruit Jam</label><br>
+                    <input type="checkbox" name="peanutButter" id="peanutButter">
+                    <label for="peanutButter">Peanut Butter</label><br>
+                    <input type="checkbox" name="freshStrawberries" id="freshStrawberries">
+                    <label for="freshStrawberries">Fresh Strawberries</label><br>
+                    <input type="checkbox" name="freshCherries" id="freshCherries">
+                    <label for="freshCherries">Fresh Cherries</label><br>
+                    <input type="checkbox" name="freshBluerries" id="freshBluerries">
+                    <label for="freshBluerries">Fresh Bluerries</label><br>
+                </div>
+                <div class="boxinbox">
+                    <label for="chocolateChipsAmount">Amount:</label>
+                    <input type="number" name="chocolateChipsAmount" id="chocolateChipsAmount" min="10" max="90" required><br>
+                    <label for="colourfulSprinklersAmount">Amount:</label>
+                    <input type="number" name="colourfulSprinklersAmount" id="colourfulSprinklersAmount" min="10" max="90" required><br>
+                    <label for="wheatCreamAmount">Amount:</label>
+                    <input type="number" name="wheatCreamAmount" id="wheatCreamAmount" min="10" max="90" required><br>
+                    <label for="fruitJamAmount">Amount:</label>
+                    <input type="number" name="fruitJamAmount" id="fruitJamAmount" min="10" max="90" required><br>
+                    <label for="peanutButterAmount">Amount:</label>
+                    <input type="number" name="peanutButterAmount" id="peanutButterAmount" min="10" max="90" required><br>
+                    <label for="freshStrawberriesAmount">Amount:</label>
+                    <input type="number" name="freshStrawberriesAmount" id="freshStrawberriesAmount" min="10" max="90" required><br>
+                    <label for="freshCherriesAmount">Amount:</label>
+                    <input type="number" name="freshCherriesAmount" id="freshCherriesAmount" min="10" max="90" required><br>
+                    <label for="freshBluerriesAmount">Amount:</label>
+                    <input type="number" name="freshBluerriesAmount" id="freshBluerriesAmount" min="10" max="90" required><br>
+                </div>
+            </fieldset>
+            <input type="submit" value="Submit Order">
+        </fieldset>
+    </form>
+    <footer>
+        <div>
+            <p class="ft1">Phone number: (720) 332-3266 <br>
+                Email: <a class="link" href="mailto:thecakewhisperer@gmail.com">thecakewhisperer@gmail.com</a></p>
+            <p class="ft2">Open Monday to Saturday from 09:00 to 18:00 <br>
+                Address: 80112 Beldford Av. | Englewood, CO | 80112</p>
+        </div>
+        
+    </footer>
+</body>
+</html>

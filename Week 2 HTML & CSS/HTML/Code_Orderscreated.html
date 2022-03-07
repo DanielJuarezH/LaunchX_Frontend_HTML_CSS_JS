@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakes Ordered - The Cake Whisperer</title>
+    <link rel="stylesheet" href="../CSS/Style_orderscreated.css">
+    <style>
+        *{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body {background-color: rgba(255, 250, 107, 0.2);
+            opacity: 0.95;
+        }
+        .name{
+            display: inline;
+            margin-left: 20px;
+        }
+        th {
+            text-align: center;
+            color: #FFFA6B;
+            background-color: #3B2500;
+        }
+        table, th, td {
+        border: 1px solid;
+        border-color: black;
+        border-collapse: collapse;
+        padding: 5px;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        footer {
+            margin-top: 5px;
+            padding: 2px;
+            background-color: #3B2500;
+            color: #FFFA6B;
+            display: flex;
+            width: 99%;
+            position: fixed;
+            bottom: 0;
+
+        }
+        .link{
+            color: #FFFA6B;
+        }
+        .ft1{
+            text-align: center;
+            display:inline-block;
+            position: relative;
+            left: 250px;
+        }
+        .ft2{
+            text-align: center;
+            display: inline-block;
+            padding-left: 20px;
+            position: absolute;
+            right: 250px;
+        }
+    </style>
+</head>
+<body>
+    <a class="logo" href="./Code_TheCakeWhispererMenu.html" target="./Code_TheCakeWhispererMenu.html"><img src="https://cdn-thumbs.imagevenue.com/ab/ed/cd/ME14JPH0_t.jpg" alt="The Cake Whisperer logo" width="150px"/></a> 
+    <h1 class="name">The Cake Whisperer</h1>
+    <h2>Orders</h2>
+    <div class="container">
+    <table>
+        <tr>
+            <th rowspan="2">Status</th>
+            <th rowspan="2">Date of Order</th>
+            <th rowspan="2">Due Date</th>
+            <th colspan="2">Cake</th>
+            <th colspan="2">Toppings</th>
+            <th rowspan="2">Notes</th>
+            <th colspan="4">Customer Information</th>
+        </tr>
+        <tr>
+            <th>Amount</th>
+            <th>Flavor</th>
+            <th>Amount</th>
+            <th>Flavor</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Phone Number</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>
+                <select name="orderStatus" id="orderStatus">
+                    <option value="selecet">Select</option>
+                    <option value="new">New</option>
+                    <option value="inProgress">In Progress</option>
+                    <option value="completed">Completed</option>
+                </select>
+            </td>
+            <td>02/05/2022</td>
+            <td>02/08/2022</td>
+            <td>1</td>
+            <td>Triple Chocolate</td>
+            <td>2</td>
+            <td>Fresh Cherries</td>
+            <td>Needs to be ready by noon</td>
+            <td>John</td>
+            <td>Doe</td>
+            <td>(720) 332-0000</td>
+            <td>customer@bakery.com</td>
+        </tr>
+        <tr>
+            <td>
+                <select name="orderStatus" id="orderStatus">
+                    <option value="selecet">Select</option>
+                    <option value="new">New</option>
+                    <option value="inProgress">In Progress</option>
+                    <option value="completed">Completed</option>
+                </select>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <select name="orderStatus" id="orderStatus">
+                    <option value="selecet">Select</option>
+                    <option value="new">New</option>
+                    <option value="inProgress">In Progress</option>
+                    <option value="completed">Completed</option>
+                </select>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <select name="orderStatus" id="orderStatus">
+                    <option value="selecet">Select</option>
+                    <option value="new">New</option>
+                    <option value="inProgress">In Progress</option>
+                    <option value="completed">Completed</option>
+                </select>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <select name="orderStatus" id="orderStatus">
+                    <option value="selecet">Select</option>
+                    <option value="new">New</option>
+                    <option value="inProgress">In Progress</option>
+                    <option value="completed">Completed</option>
+                </select>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <select name="orderStatus" id="orderStatus">
+                    <option value="selecet">Select</option>
+                    <option value="new">New</option>
+                    <option value="inProgress">In Progress</option>
+                    <option value="completed">Completed</option>
+                </select>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <select name="orderStatus" id="orderStatus">
+                    <option value="selecet">Select</option>
+                    <option value="new">New</option>
+                    <option value="inProgress">In Progress</option>
+                    <option value="completed">Completed</option>
+                </select>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <select name="orderStatus" id="orderStatus">
+                    <option value="selecet">Select</option>
+                    <option value="new">New</option>
+                    <option value="inProgress">In Progress</option>
+                    <option value="completed">Completed</option>
+                </select>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <select name="orderStatus" id="orderStatus">
+                    <option value="selecet">Select</option>
+                    <option value="new">New</option>
+                    <option value="inProgress">In Progress</option>
+                    <option value="completed">Completed</option>
+                </select>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    </div>
+    <footer>
+        <div>
+            <p class="ft1">Phone number: (720) 332-3266 <br>
+                Email: <a class="link" href="mailto:thecakewhisperer@gmail.com">thecakewhisperer@gmail.com</a></p>
+            <p class="ft2">Open Monday to Saturday from 09:00 to 18:00 <br>
+                Address: 80112 Beldford Av. | Englewood, CO | 80112</p>
+        </div>
+        
+    </footer>
+</body>
+</html>

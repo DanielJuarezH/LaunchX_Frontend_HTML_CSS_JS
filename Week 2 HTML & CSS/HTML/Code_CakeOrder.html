@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order My Cake - The Cake Whisperer</title>
+    <link rel="stylesheet" href="../CSS/Style_cakeorder.css">
+    <style>
+        *{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body {background-color: rgba(255, 250, 107, 0.2);
+            opacity: 0.95;
+
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .forms {
+            background-color: whitesmoke;
+            max-width: fit-content;
+            border-radius: 8px;
+            margin: auto;
+        }
+        .flavors {
+            margin-top: 10px;
+            float:left;
+            width: 45%;
+        }
+        .toppings {
+            margin-top: 10px;
+            float:inherit;
+            width: 45%;
+        }
+
+        input[type=text], input[type=tel], input [type=email], input[type=description] {
+            padding: 3px 3px 3px
+        }
+        input[type=button], input[type=submit], input[type=reset] {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: bold;
+            font-size: 1.1em;
+            background-color: #04AA6D;
+            color: white;
+            border: none;
+            margin-top: 10px;
+            padding: 2% 2% 2% 2%;
+            cursor: pointer;
+            width: 100%;
+            border-style: none;
+            border-radius: 8px;
+        }
+            footer {
+            margin-top: 5px;
+            padding: 2px;
+            background-color: #3B2500;
+            color: #FFFA6B;
+            display: flex;
+            width: 100%;
+        }
+        .link{
+            color: #FFFA6B;
+        }
+        .ft1{
+            text-align: center;
+            display:inline-block;
+            position: relative;
+            left: 250px;
+        }
+        .ft2{
+            text-align: center;
+            display: inline-block;
+            padding-left: 20px;
+            position: absolute;
+            right: 250px;
+        }
+        
+    </style>
+</head>
+<body>
+    <a class="logo" href="./Code_TheCakeWhispererMenu.html" target="./Code_TheCakeWhispererMenu.html"><img src="https://cdn-thumbs.imagevenue.com/ab/ed/cd/ME14JPH0_t.jpg" alt="The Cake Whisperer logo" width="150px"/></a> 
+        <form action="./cakeflavor.js" id="contactInfoForm" method="post">
+        <fieldset class="forms">
+            <legend>Create your order</legend>
+            <fieldset class="forms">
+                <legend>Your Contact Information</legend>
+                    <label for="fname">First name:</label>
+                    <input type="text" name="fname" id="fname" placeholder="Enter your first name"><br>
+                    <label for="lname">Last name:</label>
+                    <input type="text" name="lname" id="lname" placeholder="Enter your last name"><br>
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" name="phone" id="phoneNumber" placeholder="(XXX) XXX-XXXX"><br>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="mail@mail.com"><br>
+                    <label for="orderDate">Date of Order:</label>
+                    <input type="date" name="orderDate" id="orderDate"><br>
+                    <label for="orderDueDate">Due Date:</label>
+                    <input type="date" name="orderDueDate" id="orderDueDate"><br>
+                    <label for="description">Special notes for your cake:</label>
+                    <textarea name="description" id="description" rows="5" cols="50" placeholder="name of birthday person, write: 'Get better &lt;3', Needs to be ready by 4PM, etc."></textarea><br>
+            </fieldset><br>
+            <legend>You can choose as many flavors and toppings as you want, we'll bake it for you!</legend>
+            <fieldset class="flavors">
+                <legend>Choose the flavor for your cake</legend>
+                    <input type="checkbox" name="flavor1" id="Strawberry Cake" value="Strawberry Cake">
+                    <label for="Strawberry Cake">Strawberry Cake</label><br>
+                    <input type="checkbox" name="flavor2" id="Lemon Cake" value="Lemon Cake">
+                    <label for="Lemon Cake">Lemon Cake</label><br>
+                    <input type="checkbox" name="flavor3" id="Banana Cake" value="Banana Cake">
+                    <label for="Banana Cake">Banana Cake</label><br>
+                    <input type="checkbox" name="flavor4" id="Black Forest Cake" value="Black Forest Cake">
+                    <label for="Black Forest Cake">Black Forest Cake</label><br>
+                    <input type="checkbox" name="flavor5" id="Cheesecake" value="Cheesecake">
+                    <label for="Cheesecake">Cheesecake</label><br>
+                    <input type="checkbox" name="flavor6" id="Coffee Cake" value="Coffee Cake">
+                    <label for="Coffee Cake">Coffee Cake</label><br>
+                    <input type="checkbox" name="flavor7" id="Dark Chocolate Cake" value="Dark Chocolate Cake">
+                    <label for="Dark Chocolate Cake">Dark Chocolate Cake</label><br>
+                    <input type="checkbox" name="flavor8" id="Triple Chocolate Cake" value="Triple Chocolate Cake">
+                    <label for="Triple Chocolate Cake">Triple Chocolate Cake</label><br>
+            </fieldset>    
+            <fieldset class="toppings">
+                    <legend>Select your toppings</legend>
+                    <input type="checkbox" name="topping1" id="Chocolate Chips" value="Chocolate Chips">
+                    <label for="Chocolate Chips">Chocolate Chips</label><br>
+                    <input type="checkbox" name="topping2" id="Colourful Sprinklers" value="Colourful Sprinklers">
+                    <label for="Colourful Sprinklers">Colourful Sprinklers</label><br>
+                    <input type="checkbox" name="topping3" id="Wheat Cream" value="Wheat Cream">
+                    <label for="Wheat Cream">Wheat Cream</label><br>
+                    <input type="checkbox" name="topping4" id="Fruit Jam" value="Fruit Jam">
+                    <label for="Fruit Jam">Fruit Jam</label><br>
+                    <input type="checkbox" name="topping5" id="Peanut Butter" value="Peanut Butter">
+                    <label for="Peanut Butter">Peanut Butter</label><br>
+                    <input type="checkbox" name="topping6" id="Fresh Strawberries" value="Fresh Strawberries">
+                    <label for="Fresh Strawberries">Fresh Strawberries</label><br>
+                    <input type="checkbox" name="topping7" id="Fresh Cherries" value="Fresh Cherries">
+                    <label for="Fresh Cherries">Fresh Cherries</label><br>
+                    <input type="checkbox" name="topping8" id="Fresh Blueberries" value="Fresh Blueberries">
+                    <label for="Fresh Blueberries">Fresh Blueberries</label><br>
+            </fieldset>
+            <input type="submit" value="Send My Order" class="submit">
+        </fieldset>
+        </form>
+    <footer>
+        <div>
+            <p class="ft1">Phone number: (720) 332-3266 <br>
+                Email: <a class="link" href="mailto:thecakewhisperer@gmail.com">thecakewhisperer@gmail.com</a></p>
+            <p class="ft2">Open Monday to Saturday from 09:00 to 18:00 <br>
+                Address: 80112 Beldford Av. | Englewood, CO | 80112</p>
+        </div>
+        
+    </footer>
+</body>
+</html>

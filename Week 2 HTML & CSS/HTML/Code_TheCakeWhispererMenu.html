@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - The Cake Whisperer</title>
+    <link rel="stylesheet" href="./Style_thecakewhisperer.css">
+    <style>
+        *{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {background-color: rgba(255, 250, 107, 0.2);
+            opacity: 0.95;
+        }
+        .name{
+            display: inline;
+            margin-left: 20px;
+        }
+        .orderButton{
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: bold;
+            font-size: 1.1em;
+            background-color: #04AA6D;
+            color: white;
+            border: none;
+            margin-top: 10px;
+            padding: 1% 1% 1% 1%;
+            cursor: pointer;
+            width: 100%;
+            border-style: none;
+            border-radius: 8px;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .flavors{
+            width: 45%;
+            display: inline-block;
+        }
+        .decorations{
+            width: 45%;
+            display: inline-block;
+        }
+        footer {
+            margin-top: 5px;
+            padding: 2px;
+            background-color: #3B2500;
+            color: #FFFA6B;
+            display: flex;
+            width: 100%;
+        }
+        .link{
+            color: #FFFA6B;
+        }
+        .ft1{
+            text-align: center;
+            display:inline-block;
+            position: relative;
+            left: 250px;
+        }
+        .ft2{
+            text-align: center;
+            display: inline-block;
+            padding-left: 20px;
+            position: absolute;
+            right: 250px;
+        }
+        .img-container {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+        }
+
+        .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+    </style>
+</head>
+<body>
+    <a class="logo" href="./Code_TheCakeWhispererMenu.html" target="./Code_TheCakeWhispererMenu.html"><img src="https://cdn-thumbs.imagevenue.com/ab/ed/cd/ME14JPH0_t.jpg" alt="The Cake Whisperer logo" width="150px"/></a> 
+    <h1 class="name">The Cake Whisperer</h1>
+    <a href="./Cake Order.html">
+        <input type="button" value="Order My Cake" class="orderButton"><br>
+    </a>
+    <div class="container">
+    <div class="flavors">
+        <h2>Cake Flavors</h2>
+            <p>You can get one single flavor or mix them up to create your own cake.</p>
+            <table>
+                <tr>
+                    <th>Flavor</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Strawberry Cake</td>
+                    <td>$25.00</td>
+                </tr>
+                <tr>
+                    <td>Lemon Cake</td>
+                    <td>$25.00</td>
+                </tr>
+                <tr>
+                    <td>Banana Cake</td>
+                    <td>$25.00</td>
+                </tr>
+                <tr>
+                    <td>Black Forest Cake</td>
+                    <td>$30.00</td>
+                </tr>
+                <tr>
+                    <td>Cheesecake</td>
+                    <td>$30.00</td>
+                </tr>
+                <tr>
+                    <td>Coffee Cake</td>
+                    <td>$30.00</td>
+                </tr>
+                <tr>
+                    <td>Dark Chocolate Cake</td>
+                    <td>$30.00</td>
+                </tr>
+                <tr>
+                    <td>Triple Chocolate Cake</td>
+                    <td>$35.00</td>
+                </tr>
+            </table>
+    </div>
+    <div class="decorations">
+        <h2>Decorations & Toppings</h2>
+            <p>You can add as many decorations and toppings as you want.</p>
+            <table>
+                <tr>
+                    <th>Topping</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Chocolate Chips</td>
+                    <td>$2.00</td>
+                </tr>
+                <tr>
+                    <td>Colourful Sprinklers</td>
+                    <td>$2.00</td>
+                </tr>
+                <tr>
+                    <td>Wheat Cream</td>
+                    <td>$1.00</td>
+                </tr>
+                <tr>
+                    <td>Fruit Jam</td>
+                    <td>$2.00</td>
+                </tr>
+                <tr>
+                    <td>Peanut Butter</td>
+                    <td>$2.00</td>
+                </tr>
+                <tr>
+                    <td>Fresh Strawberries</td>
+                    <td>$5.00</td>
+                </tr>
+                <tr>
+                    <td>Fresh Cherries</td>
+                    <td>$5.00</td>
+                </tr>
+                <tr>
+                    <td>Fresh Blueberries</td>
+                    <td>$5.00</td>
+                </tr>
+            </table>
+    </div>
+    </div>
+    <hr>
+    <div class="clearfix">
+        <div class="img-container">
+        <img src="./chocolate-cake.jpeg" alt="Italy" style="width:100%">
+        </div>
+        <div class="img-container">
+        <img src="./popular-cake-cover-image.jpeg" alt="Forest" style="width:100%">
+        </div>
+        <div class="img-container">
+        <img src="./cheese-cake.jpeg" alt="Mountains" style="width:100%">
+        </div>
+    </div>
+    <a href="./Cake Order.html">
+        <input type="button" value="Order My Cake" class="orderButton"><br>
+    </a>
+    <footer>
+        <div>
+            <p class="ft1">Phone number: (720) 332-3266 <br>
+                Email: <a class="link" href="mailto:thecakewhisperer@gmail.com">thecakewhisperer@gmail.com</a></p>
+            <p class="ft2">Open Monday to Saturday from 09:00 to 18:00 <br>
+                Address: 80112 Beldford Av. | Englewood, CO | 80112</p>
+        </div>
+        
+    </footer>
+    
+</body>
+</html>
